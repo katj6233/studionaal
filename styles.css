@@ -1,6 +1,128 @@
 :root {
-  --text--: black;
+  /* backgroudcolor */
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #181818;
+
+
+  /* ------- header desk ------- */
+  --desk-bg-color-header: transparant;
+  --header-a-color: #0015D6;
+
+  /* header mobile*/
+  --mobile-bg-color-header: transparant;
+  --mobile--a-color: #0015D6;
+  --burger-color-primary: #0338e1;
+  --burger-color-secondary: #181818;
+
+  /* buttons*/
+  --button--bg-color: #ffffff;
+  --button-padding: ;
+  --button-gap: ;
+  --button-height: ;
+  --button-shadow: ;
+
+  --button-radius: ;
+  --button-transform-animation: scale(1.2);
+
+  --button-txt-color: #181818;
+  --button-txt-color-hover: #0338e1;
+
+  /* ------- headings ------ */
+
+  /* fonte */
+  --h1--: "Graphik", sans-serif;
+  --h2--: "Graphik", sans-serif;
+  --h3--: "Graphik", sans-serif;
+  --h4--: "Graphik", sans-serif;
+  --h5--: "Graphik", sans-serif;
+  --p--: "Graphik", sans-serif;
+  --a--: "Graphik", sans-serif;
+  --li--: "Graphik", sans-serif;
+
+  /* hover */
+  --a--hover-primary: underline;
+  --a--hover-secondary: italic;
+  /* kan man lave border top og bottom her? */  --button-hover-primary: ;
+  --button-hover-color: #0338e1;
+
+  /* font-sizes */
+  --h1--size--forside: ;
+  --h1-size--: ;
+  --h2-size--: ;
+  --h3--size-: ;
+  --h4-size--: ;
+  --h5-size--: ;
+  --p-size--: ;
+  --a-size--: ;
+  --button-size--: ;
+ 
+
+  --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+
+
+  /* font-colors */
+  --h1--color-primary: #181818;
+  --h1--color-secondary: #202020;
+
+  --h2--color-primary: #181818;
+  --h2--color-secondary: #fdfdfd;
+ 
+
+  --h3--color-primary: #181818;
+  --h3--color-secondary: #fdfdfd;
+
+
+  --h4--color-primary: #202020;
+  --h4--color-secondary: #fdfdfd;
+
+
+  --h5--color-primary: #202020;
+  --h5--color-secondary: #fdfdfd;
+ 
+
+  --p--color-primary: #202020;
+  --p--color-secondary: #fdfdfd;
+
+
+  --a--color-primary: ##181818;
+  --a--color-secondary: #fdfdfd;
+
+
+  /* margin headings */
+  --h1--margin-bottom: ;
+  --heading--margin-bottom: ;
+  --p--margin-bottom: ;
+  --p--margin-top: ;
+
+  /*---- GENERELLE REGLER mobil  390 --------*/
+  --margin-inline-mobil: ;
+  --margin-bottom-mobil: ;
+
+  /*---- GENERELLE REGLER ipad mini 640 --------*/
+  --margin-inline-ipadmini: 4rem;
+  --margin-bottom-ipadmini: 3rem;
+
+  /*---- GENERELLE REGLER ipad  768 --------*/
+  --margin-inline-ipad: 6rem;
+  --margin-bottom-ipad: 4rem;
+
+  /*---- GENERELLE REGLER desk 1024 --------*/
+  --margin-inline-desk--lille: 10rem;
+  --margin-bottom-desk--lille: 8rem;
+
+  /*---- GENERELLE REGLER desk 1280 --------*/
+  --margin-inline-desk: 18rem;
+  --margin-bottom-desk: 8rem;
+
+  /*---- IMG REGLER--------*/
+  --img-shadow: ;
 }
+
+@font-face {
+    font-family: "Graphik";
+    src: src: url('./font/graphik-thin-webfont.woff');
+} 
+
 
 #main {
   display: grid;
@@ -16,6 +138,7 @@ img {
 
 body {
   margin: 0;
+
 }
 
 #footer_allaround {
