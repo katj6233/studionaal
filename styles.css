@@ -1,3 +1,7 @@
 :root {
-    --text--: black;
+  --text--: black;
+}
+
+.footer_a_links_sider {
+  list-style: none;
 }
