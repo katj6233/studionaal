@@ -9,6 +9,11 @@
   position: relative;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
 }
@@ -43,10 +48,15 @@ body {
 .indhold_grid_mobile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/4;
 }
 
 .forside_h1 {
   grid-column: 1/4;
+}
+
+.forside_boks {
+  grid-column: 1/3;
 }
 
 /* .background_grid_mobile .grid-item:last-child {
