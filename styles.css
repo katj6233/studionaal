@@ -241,8 +241,7 @@ button:hover {
 }
 
 .background_grid_mobile .grid-item-1,
-.background_grid_tablet .grid-item-1,
-.background_grid_desktop .grid-item-1 {
+.background_grid_tablet .grid-item-1 {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
@@ -317,6 +316,11 @@ button:hover {
 
 @media (min-width: 1260px) {
   /*---------------------------------------------------------- GRID TABLET -------------------------------------------------------*/
+  #main {
+    margin-inline: 0rem;
+    position: relative;
+  }
+
   .background_grid_mobile,
   .background_grid_tablet {
     display: none;
@@ -330,5 +334,9 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     overflow: hidden;
+  }
+
+  .background_grid_desktop .grid-item-1 {
+    border-right: 1px solid black;
   }
 }
