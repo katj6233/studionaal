@@ -119,6 +119,8 @@
   --img-shadow: ;
 }
 
+  /*---------------------------------------------------------- FONT FACE -----------------------------------------------------*/
+
 @font-face {
     font-family: "Graphik Medium";
     src: url('./font/graphik-medium-webfont.woff');
@@ -139,6 +141,7 @@
     src: url('./font/graphik-light-webfont.woff');
 } 
 
+  /*-------------------------------------------------------- GENERELLE REGGLER ----------------------------------------------*/
 
 #main {
   display: grid;
@@ -157,6 +160,66 @@ body {
 
 }
 
+ /*----------------------------- General tekst --------------------------------*/
+
+ h1 {
+    font-family: var(--h1--);
+    font-size: var(--h1-size--);
+    color: var(--h1--color-primary);
+ }
+
+ h2 {
+    font-family: var(--h2--);
+    font-size: var(--h2-size--);
+    color: var(--h2--color-primary);
+ }
+
+ h3 {
+    font-family: var(--h3--);
+    font-size: var(--h3-size--);
+    color: var(--h3--color-primary);
+ }
+
+ h4 {
+    font-family: var(--h4--);
+    font-size: var(--h4-size--);
+    color: var(--h4--color-primary);
+ }
+
+ h5 {
+    font-family: var(--h5--);
+    font-size: var(--h5-size--);
+    color: var(--h5--color-primary);
+ }
+
+ p {
+    font-family: var(--p--);
+    font-size: var(--p-size--);
+    color: var(--p--color-primary);
+ }
+
+ a {
+    font-family: var(--a--);
+    font-size: var(--a-size--);
+    color: var(--a--color-primary);
+ }
+
+  /*------------------- Button -----------------------*/
+
+  button {
+    font-family: var(--button-txt-color);
+    font-size: var(--button-size--);
+    color: var(--button--color-primary);
+    background-color: var(--button--bg-color);
+ }
+
+ button:hover {
+    color: var(--button-txt-color-hover);
+    animation: var( --button-transform-animation-hover);
+ }
+
+  /*--------------------------------------------------------- FOOTER ----------------------------------------------------*/
+
 #footer_allaround {
   border-top: 1px solid black;
 }
@@ -165,6 +228,9 @@ body {
   list-style: none;
   padding: 0;
 }
+
+
+  /*---------------------------------------------------------- GRID -------------------------------------------------------*/
 
 .background_grid_mobile {
   z-index: -1;
