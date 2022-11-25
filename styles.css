@@ -46,18 +46,19 @@
   --button-hover-color: #0338e1;
 
   /* font-sizes */
-  --h1--size--forside: ;
-  --h1-size--: ;
-  --h2-size--: ;
-  --h3--size-: ;
-  --h4-size--: ;
-  --h5-size--: ;
-  --p-size--: ;
-  --a-size--: ;
-  --button-size--: ;
+
+
+  --h1-size--: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem) ;
+  --h2-size--: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
+  --h3--size-: clamp(1.438rem, 1.2256rem + 1.062vw, 2.5rem);
+  --h4-size--: clamp(1.25rem, 1.0624rem + 0.9380000000000002vw, 2.188rem);
+  --h5-size--: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
+  --p-size--: clamp(1.125rem, 1.0124rem + 0.563vw, 1.688rem);
+  --a-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  --button-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
  
 
-  --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+  --p--lineheight: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
 
 
   /* font-colors */
@@ -99,20 +100,20 @@
   --margin-bottom-mobil: ;
 
   /*---- GENERELLE REGLER ipad mini 640 --------*/
-  --margin-inline-ipadmini: 4rem;
-  --margin-bottom-ipadmini: 3rem;
+  --margin-inline-ipadmini: ;
+  --margin-bottom-ipadmini: ;
 
   /*---- GENERELLE REGLER ipad  768 --------*/
-  --margin-inline-ipad: 6rem;
-  --margin-bottom-ipad: 4rem;
+  --margin-inline-ipad: ;
+  --margin-bottom-ipad: ;
 
   /*---- GENERELLE REGLER desk 1024 --------*/
-  --margin-inline-desk--lille: 10rem;
-  --margin-bottom-desk--lille: 8rem;
+  --margin-inline-desk--lille: 1;
+  --margin-bottom-desk--lille: ;
 
   /*---- GENERELLE REGLER desk 1280 --------*/
-  --margin-inline-desk: 18rem;
-  --margin-bottom-desk: 8rem;
+  --margin-inline-desk: 1;
+  --margin-bottom-desk: ;
 
   /*---- IMG REGLER--------*/
   --img-shadow: ;
