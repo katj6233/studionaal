@@ -27,15 +27,17 @@
 
   /* ------- headings ------ */
 
-  /* fonte */
-  --h1--: "Graphik", sans-serif;
-  --h2--: "Graphik", sans-serif;
-  --h3--: "Graphik", sans-serif;
-  --h4--: "Graphik", sans-serif;
-  --h5--: "Graphik", sans-serif;
-  --p--: "Graphik", sans-serif;
-  --a--: "Graphik", sans-serif;
-  --li--: "Graphik", sans-serif;
+  /* fonte desk */
+  --h1--: "Graphik Medium", sans-serif;
+  --h2--: "Graphik Regular", sans-serif;
+  --h3--: "Graphik Light", sans-serif;
+  --h4--: "Graphik Light", sans-serif;
+  --h5--: "Graphik Light", sans-serif;
+  --p--: "Graphik Light", sans-serif;
+  --a--: "Graphik Medium", sans-serif;
+  --nav--: "Graphik Light", sans-serif;
+  --CTA--: "Graphik Regular", sans-serif;
+  --caption--: "Graphik Regular Italic", sans-serif;
 
   /* hover */
   --a--hover-primary: underline;
@@ -117,8 +119,23 @@
 }
 
 @font-face {
-    font-family: "Graphik";
-    src: url('./font/graphik-thin-webfont.woff');
+    font-family: "Graphik Medium";
+    src: url('./font/graphik-medium-webfont.woff');
+} 
+
+@font-face {
+    font-family: "Graphik Regular";
+    src: url('./font/graphik-regular-webfont.woff');
+} 
+
+@font-face {
+    font-family: "Graphik Regular Italic";
+    src: url('./font/graphik-regular_italic-webfont.woff');
+} 
+
+@font-face {
+    font-family: "Graphik Light";
+    src: url('./font/graphik-light-webfont.woff');
 } 
 
 
