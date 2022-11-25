@@ -3,8 +3,7 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #181818;
 
-
-  /* ------- header desk ------- */
+    /* header desk  */
   --desk-bg-color-header: transparant;
   --header-a-color: #0015D6;
 
@@ -19,10 +18,9 @@
   --button-padding: ;
   --button-gap: ;
   --button-height: ;
-  --button-shadow: ;
 
   --button-radius: ;
-  --button-transform-animation: scale(1.2);
+  --button-transform-animation-hover: scale(1.2);
 
   --button-txt-color: #181818;
   --button-txt-color-hover: #0338e1;
@@ -62,30 +60,30 @@
 
   /* font-colors */
   --h1--color-primary: #181818;
-  --h1--color-secondary: #202020;
+  --h1--color-secondary: #FFFFFF;
 
   --h2--color-primary: #181818;
-  --h2--color-secondary: #fdfdfd;
+  --h2--color-secondary: #FFFFFF;
  
 
   --h3--color-primary: #181818;
-  --h3--color-secondary: #fdfdfd;
+  --h3--color-secondary: #FFFFFF;
 
 
-  --h4--color-primary: #202020;
-  --h4--color-secondary: #fdfdfd;
+  --h4--color-primary: #181818;
+  --h4--color-secondary: #FFFFFF;
 
 
-  --h5--color-primary: #202020;
-  --h5--color-secondary: #fdfdfd;
+  --h5--color-primary: #181818;
+  --h5--color-secondary: #FFFFFF;
  
 
-  --p--color-primary: #202020;
-  --p--color-secondary: #fdfdfd;
+  --p--color-primary: #181818;
+  --p--color-secondary: #FFFFFF;
 
 
-  --a--color-primary: ##181818;
-  --a--color-secondary: #fdfdfd;
+  --a--color-primary: #181818;
+  --a--color-secondary: #FFFFFF;
 
 
   /* margin headings */
