@@ -15,7 +15,16 @@
     <!-- header -->
     <header>
       <nav class="navbar">
-        <a href="#" class="nav-logo">Logo</a>
+        <div class="container-logo">
+          <video
+            loop
+            onmouseover="this.play();"
+            onmouseout="this.pause();"
+            type="video/mp4"
+            class="nav-logo"
+            src="/video/logo_baggrund.mp4"
+          ></video>
+        </div>
 
         <ul class="nav-menu">
           <li class="nav-item">
@@ -37,6 +46,7 @@
             <a href="#" class="nav-link">BOOKING</a>
           </li>
         </ul>
+
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -59,6 +69,7 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
+        <div class="grid-item"></div>
       </div>
 
       <div class="background_grid_desktop">
@@ -67,18 +78,25 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item-7"></div>
+        <div class="grid-item-6"></div>
       </div>
 
       <section class="forside_section1">
-        <h1 class="forside_section1_h1">
+        <video
+          class="forside_section1_hero"
+          src="/video/naal_splash_udvidet.mp4"
+          type="video/mp4"
+        ></video>
+      </section>
+
+      <section class="forside_section2">
+        <h1 class="forside_section2_h1">
           A creative studio and safe space for the artists as well as our
           custumors. Art is an experience.
         </h1>
 
-        <div class="forside_section1_tekst_cta">
-          <p>
+        <div class="forside_section2_tekst_cta">
+          <p class="test">
             Our goal is to give you the best experience by delivering beautiful
             pieces of art and making you feel safe and welcome. We are aware
             that, getting a tattoo is an overall experience and we aim that you
@@ -88,12 +106,12 @@
             customers. We are looking forward to meet you and we can’t wait to
             see what we will create together!
           </p>
-          <button>ARTISTS</button>
+          <a class="button forside_section2_cta" href="#">[TEAM]</a>
         </div>
 
-        <div class="forside_section1_image">
+        <div class="forside_section2_image_links">
           <img src="/img/img_1.png" alt="Billede af" />
-          <div>
+          <div class="forside_section2_links">
             <li>
               <a href="https://www.instagram.com/syro_bisse/">@syro_bisse</a>
             </li>
@@ -111,18 +129,18 @@
         </div>
       </section>
 
-      <section class="forside_section2">
-        <h2 class="forside_section2_h2">
+      <section class="forside_section3">
+        <h2 class="forside_section3_h2">
           N.A.A.L is more than just a studio. We are a community, and we always
           have room for new friends like yourself.
         </h2>
 
-        <div class="forside_section2_image">
+        <div class="forside_section3_image">
           <img src="/img/img_2.png" alt="Billede af" />
-          <button>Events</button>
+          <a class="button" href="#">[EVENTS]</a>
         </div>
 
-        <div class="forside_section2_tekst">
+        <div class="forside_section3_tekst">
           <p>
             We love connect. We love other creatives. And we love to drink beer.
           </p>
@@ -137,9 +155,13 @@
         </div>
       </section>
 
-      <section class="forside_section3">
-        <div class="forside_section3_video_figcaption">
-          <img src="/img/img_2.png" alt="Billede af" />
+      <section class="forside_section4">
+        <div class="forside_section4_video_figcaption">
+          <video
+            class="forside_section4_video"
+            src="/video/naal_splash_udvidet.mp4"
+            type="video/mp4"
+          ></video>
           <figcaption>Video af studiet</figcaption>
         </div>
       </section>
