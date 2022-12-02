@@ -41,7 +41,7 @@
   --a--: "Graphik Medium", sans-serif;
   --nav--: "Graphik Light", sans-serif;
   --CTA--: "Graphik Regular", sans-serif;
-  --caption--: "Graphik Regular Italic", sans-serif;
+  --figcaption--: "Graphik Regular Italic", sans-serif;
 
   /* hover */
   --a--hover-primary: underline;
@@ -54,11 +54,12 @@
 
   --h1-size--: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
   --h2-size--: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
-  --h3--size-: clamp(1.438rem, 1.2256rem + 1.062vw, 2.5rem);
+  --h3-size--: clamp(1.438rem, 1.2256rem + 1.062vw, 2.5rem);
   --h4-size--: clamp(1.25rem, 1.0624rem + 0.9380000000000002vw, 2.188rem);
   --h5-size--: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
   --p-size--: clamp(1.125rem, 1.0124rem + 0.563vw, 1.688rem);
   --a-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  --figcation-size--: clamp(1.125rem, 1.0124rem + 0.563vw, 1.688rem);
   --button-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
 
   --p--lineheight: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
@@ -82,18 +83,21 @@
   --p--color-primary: #181818;
   --p--color-secondary: #ffffff;
 
+  --figcaption--color-primary: #181818;
+  --figcaption--color-secondary: #ffffff;
+
   --a--color-primary: #181818;
   --a--color-secondary: #ffffff;
 
   /* margin headings */
-  --h1--margin-bottom: ;
+  --h1--margin-bottom: 1rem;
   --heading--margin-bottom: ;
   --p--margin-bottom: ;
   --p--margin-top: ;
 
   /*---- GENERELLE REGLER mobil  390 --------*/
   --margin-inline-mobil: ;
-  --margin-bottom-mobil: ;
+  --padding-top-mobil: 2rem;
 
   /*---- GENERELLE REGLER ipad mini 640 --------*/
   --margin-inline-ipadmini: ;
@@ -149,16 +153,16 @@
   position: relative;
 }
 
+.generelt_margin {
+  padding-top: var(--padding-top-mobil);
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
-body {
-  margin: 0;
-}
-
-/*----------------------------- General tekst --------------------------------*/
+/*----------------------------- General styiling af tekst --------------------------------*/
 
 h1 {
   font-family: var(--h1--);
@@ -190,7 +194,8 @@ h5 {
   color: var(--h5--color-primary);
 }
 
-p {
+p,
+li {
   font-family: var(--p--);
   font-size: var(--p-size--);
   color: var(--p--color-primary);
@@ -203,14 +208,13 @@ a {
   text-decoration: none;
 }
 
-/*----------------------------- Button --------------------------------*/
+.figcaption {
+  font-family: var(--figcaption--);
+  font-size: var(--figcation-size--);
+  color: var(--figcaption--color-primary);
+}
 
-/* button {
-  font-family: var(--CTA--);
-  font-size: var(--button-size--);
-  color: var(--button--color-primary);
-  background-color: var(--button--bg-color);
-} */
+/*----------------------------- Button --------------------------------*/
 
 .button {
   font-family: var(--CTA--);
@@ -330,7 +334,6 @@ li {
   grid-column: 1/4;
   width: 100%;
   height: 100%;
-  margin-top: 2rem;
 }
 
 /*--------------------- grid section2 --------------------*/
@@ -648,7 +651,47 @@ li {
 }
 
 /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
+/*--------------------- grid section1 --------------------*/
+.get_in_touch_section1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.get_in_touch_section1 h1 {
+  grid-column: 1/4;
+}
+
+/*--------------------- grid section2 --------------------*/
+/*--------------------- grid section3 --------------------*/
+
+.get_in_touch_section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid black;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.get_in_touch_section3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.get_in_touch_section2 h2,
+.get_in_touch_section3 h2,
+.get_in_touch_section2 h3,
+.get_in_touch_section3 h3 {
+  grid-column: 1/4;
+}
+
+.get_in_touch_section2 a,
+.get_in_touch_section3 ul {
+  grid-column: 2/4;
+  padding-top: 1rem;
+}
+
 /*---------------------------------------------------------- 404 -------------------------------------------------------*/
+/*--------------------- grid section1 --------------------*/
 .notfound_section1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
