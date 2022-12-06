@@ -293,8 +293,7 @@ li {
 
 /*---------------------------------------------------------- GRID ------------------------------------------------------*/
 
-.background_grid_tablet,
-.background_grid_desktop {
+.background_grid_tablet_desktop {
   display: none;
 }
 
@@ -308,16 +307,15 @@ li {
   overflow: hidden;
 }
 
-/*--------------------- Grid generelt --------------------*/
+/*--------------------- Grid styiling --------------------*/
 
 .background_grid_mobile .grid-item,
-.background_grid_tablet .grid-item,
-.background_grid_desktop .grid-item {
+.background_grid_tablet_desktop .grid-item {
   border-right: 1px solid var(--primary-grid-color);
 }
 
 .background_grid_mobile .grid-item-1,
-.background_grid_tablet .grid-item-1 {
+.background_grid_tablet_desktop .grid-item-1 {
   border-left: 1px solid var(--primary-grid-color);
   border-right: 1px solid var(--primary-grid-color);
 }
@@ -659,12 +657,11 @@ li {
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
   /*---------------------------------------------------------- GRID ------------------------------------------------------*/
 
-  .background_grid_mobile,
-  .background_grid_desktop {
+  .background_grid_mobile {
     display: none;
   }
 
-  .background_grid_tablet {
+  .background_grid_tablet_desktop {
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -944,12 +941,11 @@ li {
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
   /*---------------------------------------------------------- GRID ------------------------------------------------------*/
 
-  .background_grid_mobile,
-  .background_grid_desktop {
+  /* .background_grid_mobile {
     display: none;
   }
 
-  .background_grid_tablet {
+  .background_grid_tablet_desktop {
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -957,7 +953,7 @@ li {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     overflow: hidden;
-  }
+  } */
 
   /*---------------------------------------------------------- FORSIDE ---------------------------------------------------*/
 
@@ -1138,7 +1134,7 @@ li {
   /*---------------------------------------------------------- MENU ------------------------------------------------------*/
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
   /*---------------------------------------------------------- GRID ------------------------------------------------------*/
-  .background_grid_mobile,
+  /* .background_grid_mobile,
   .background_grid_desktop {
     display: none;
   }
@@ -1155,7 +1151,7 @@ li {
 
   .background_grid_desktop .grid-item-1 {
     border-right: 1px solid black;
-  }
+  } */
 
   /*---------------------------------------------------------- FORSIDE ---------------------------------------------------*/
   /*---------------------------------------------------------- EVENTS ----------------------------------------------------*/
