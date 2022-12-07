@@ -2701,10 +2701,10 @@
          * @memberof    mixitup.Config.controls
          * @instance
          * @type        {string}
-         * @default     'all'
+         * @default     'none'
          */
 
-        this.toggleDefault = 'all'; // enum: ['all', 'none']
+        this.toggleDefault = 'none'; // enum: ['all', 'none']
 
         this.callActions('afterConstruct');
 
@@ -3426,10 +3426,10 @@
          * @memberof    mixitup.Config.load
          * @instance
          * @type        {string}
-         * @default     'all'
+         * @default     'none'
          */
 
-        this.filter = 'all';
+        this.filter = 'none';
 
         /**
          * A string defining any sorting to be statically applied to the mixer on load.

@@ -1,0 +1,1 @@
+var mixer = mixitup('.team_section3');
