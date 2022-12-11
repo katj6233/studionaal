@@ -12,3 +12,14 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+const logoVideo = document.querySelector("#logo-video");
+
+logoVideo.addEventListener("mouseenter", (event) => {
+  event.target.play();
+});
+
+logoVideo.addEventListener("mouseleave", (event) => {
+  event.target.pause();
+  event.target.currentTime = 0;
+});
