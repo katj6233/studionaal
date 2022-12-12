@@ -283,12 +283,21 @@ li {
 /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
 
 #footer_allaround {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--primary-grid-color);
 }
 
 .footer_div_links ul {
   list-style: none;
   padding: 0;
+}
+
+.footer_section2_tom_boks {
+  display: none;
+}
+
+.footer_section1_indhold {
+  border-left: 10px solid var(--burger-color-primary);
+  border-bottom: 10px solid var(--burger-color-primary);
 }
 
 /*---------------------------------------------------------- GRID ------------------------------------------------------*/
@@ -655,6 +664,19 @@ li {
   }
   /*---------------------------------------------------------- MENU ------------------------------------------------------*/
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
+
+  .footer_article_around {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer_section2_tom_boks {
+    display: block;
+    border-right: 10px solid var(--burger-color-primary);
+    border-bottom: 10px solid var(--burger-color-primary);
+    border-left: 1px solid var(--primary-grid-color);
+  }
+
   /*---------------------------------------------------------- GRID ------------------------------------------------------*/
 
   .background_grid_mobile {
