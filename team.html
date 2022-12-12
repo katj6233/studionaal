@@ -36,7 +36,7 @@
 
       <section class="team_section1 generelt_margin">
         <h1 class="team_section1_h1">
-          MEET OUT TEAM AND TAKE A LOOK AT THEIR PREVIOUS WORK
+          MEET OUR TEAM AND TAKE A LOOK AT THEIR PREVIOUS WORK
         </h1>
         <p class="team_section1_tekst">
           Below you will see an overview of our tattoo artists. Here you can
@@ -53,7 +53,7 @@
 
       <section class="team_section2">
         <div class="team_section2_div1">
-          <h2 class="team_section2_div1_h2">Syro_bisse</h2>
+          <h2 class="team_section2_div1_h2">Syro_Bisse</h2>
           <p class="team_section2_div1_tekst">
             Sally Andresen known as Syro bisse is self-taught and inspired by
             her surroundings growing up in Copenhagen, “ignorant” style is where
@@ -63,7 +63,7 @@
         </div>
 
         <div class="team_section2_div2">
-          <h2 class="team_section2_div2_h2">Syro_bisse</h2>
+          <h2 class="team_section2_div2_h2">Grill_Tattoo</h2>
           <p class="team_section2_div2_tekst">
             Emily Weber known as Grill Tattoo is not only a very talented
             self-taught tattoo artist but she also makes epic paintings and
@@ -73,7 +73,7 @@
         </div>
 
         <div class="team_section2_div3">
-          <h2 class="team_section2_div3_h2">Syro_bisse</h2>
+          <h2 class="team_section2_div3_h2">It’s_Spicytattoos</h2>
           <p class="team_section2_div3_tekst">
             Tania Nielsson known as Spicy Tattoo is a self-taught tattoo artist
             who specialises in Fineline and dot-work. She appreciates the body's
@@ -88,32 +88,98 @@
 
       <section class="team_section3">
         <!----- knapper ----->
-
         <form>
           <fieldset>
-            <h5>sortering</h5>
-            <button type="button" data-sort="random">Random</button>
-            <button type="button" data-filter=".sally">sally</button>
-            <button type="button" data-filter=".emily">emily</button>
-            <button type="button" data-filter=".tania">tania</button>
+            <!-- <h5>sortering</h5>
+            <button type="button" data-sort="random">Random</button> -->
+            <button class="button" type="button" data-filter=".all">
+              Show all
+            </button>
+            <button class="button" type="button" data-filter=".sally">
+              Syro Bisses work
+            </button>
+            <button class="button" type="button" data-filter=".emily">
+              Emily' work
+            </button>
+            <button class="button" type="button" data-filter=".tania">
+              Tania'
+            </button>
           </fieldset>
         </form>
 
         <!----- sally ----->
+        <article class="team_article_sally mix all sally" data-name="sally">
+          <section class="team_section3_filtrering_sally">
+            <img
+              src="/img/web_img/teams_content/sally/Sally_img_face.png"
+              alt="Billede af"
+            />
+            <div class="team_section3_div1_filtrering_sally">
+              <h3>Syro_Bisse // Sally</h3>
+              <p>
+                Syro Bisse's arrogant style is the definition of youth. Her
+                style reflects her raw image of Copenhagen and she shows this
+                especially in her unique shadow work.
+              </p>
+            </div>
 
-        <article class="team_article_sally mix sally" data-name="sally">
-          <h1>Hej Sally</h1>
+            <div class="team_section3_div2_filtrering_sally">
+              <div class="team_section3_div2_div1_filtrering_sally">
+                <li>
+                  “I had an awesome time with Sally, she is so nice and very
+                  talented” - Emma (customer)
+                </li>
+                <li>
+                  “I know it will be a good experience when I have an
+                  appointment with Grill, she just knows what she's doing” -
+                  Johann (customer)
+                </li>
+                <a class="button" href="#">[BOOK]</a>
+              </div>
+            </div>
+
+            <div class="team_section3_div3_filtrering_sally">
+              <div class="team_section3_div4_filtrering_sally">
+                <h4>Previous work</h4>
+                <div class="team_section3_div5_filtrering_sally_pil">
+                  <h3><</h3>
+                  <h3>></h3>
+                </div>
+              </div>
+              <img
+                class="carousel"
+                src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
+                alt="Billede af"
+              />
+              <p class="team_section3_filtrering_sally_p_links">
+                See more of her work on Instagram:
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/studio_n.a.a.l/"
+                  target="blank"
+                  >@studio_naal</a
+                >
+                and
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/syro_bisse/"
+                  target="blank"
+                  >@syro_bisse</a
+                >
+              </p>
+            </div>
+          </section>
         </article>
 
         <!----- emily ----->
 
-        <article class="team_article_emily mix emily" data-name="emily">
+        <article class="team_article_emily mix all emily" data-name="emily">
           <h1>Hej Emily</h1>
         </article>
 
         <!----- tania ----->
 
-        <article class="team_article_tania mix tania" data-name="tania">
+        <article class="team_article_tania mix all tania" data-name="tania">
           <h1>Hej Tania</h1>
         </article>
       </section>
