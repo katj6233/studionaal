@@ -254,12 +254,18 @@ li {
 }
 
 .navbar {
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 200;
   max-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* padding-inline: 0.5rem; */
   border-bottom: 1px solid #999999;
+  background: white;
 }
 
 .container-logo {
@@ -277,7 +283,7 @@ li {
 }
 
 .nav-menu {
-  z-index: 100;
+  z-index: 0;
 }
 
 .nav-item {
@@ -330,6 +336,12 @@ li {
 .footer_section1_indhold {
   border-left: 10px solid var(--burger-color-primary--);
   border-bottom: 10px solid var(--burger-color-primary--);
+  display: flex;
+  justify-content: center;
+}
+
+.footer_section1_inner {
+  width:70%;
 }
 
 .footer_section1_indhold .footer_a_links_sider {
@@ -675,18 +687,16 @@ fieldset {
 
 .team_section3_div3_filtrering_sally {
   grid-column: 1/4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
-/* .slider_wrapper {
-  grid-column: 1/4;
+.slider_wrapper {
+  overflow-y:scroll;
   display: flex;
-  
-} */
+  gap:2rem;
+}
 
-.carousel {
-  grid-column: 2/4;
+.carousel-item {
+  width:60vw;
 }
 
 .team_section3_div4_filtrering_sally {
@@ -728,10 +738,9 @@ fieldset {
 }
 
 .close-button {
-  margin-block: 3rem;
   position: absolute;
-  top: -2rem;
-  right: 1rem;
+  top: 1px;
+  right: 1px;
   background: white;
   border: none;
   cursor: pointer;
@@ -750,7 +759,7 @@ fieldset {
   position: sticky;
 }
 
-input {
+input, select {
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -758,7 +767,7 @@ input {
   border-top: none;
 }
 
-input[type="text"] {
+input[type="text"], select  {
   color: #333;
   width: 100%;
   box-sizing: border-box;
@@ -863,7 +872,7 @@ li {
 #git_guide_cookie_trade_notfound_section5 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid black;
+  
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
@@ -1218,9 +1227,7 @@ li {
 
   /*--------------------- filtrering --------------------*/
 
-  .team_section3_div3_filtrering_sally {
-    display: none;
-  }
+
 
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
   /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
@@ -1250,8 +1257,19 @@ li {
   #git_guide_cookie_trade_notfound_section4,
   #git_guide_cookie_trade_notfound_section5,
   #git_guide_cookie_trade_notfound_section2_404 {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(6, 1fr);
+    
+  }
+
+  #git_guide_cookie_trade_notfound_section2 div,
+  #git_guide_cookie_trade_notfound_section3 div,
+  #git_guide_cookie_trade_notfound_section4 div,
+  #git_guide_cookie_trade_notfound_section5 div,
+  #git_guide_cookie_trade_notfound_section2_404 div {
+    grid-column: 2/6;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
   }
 
   #git_guide_cookie_trade_notfound_section2 h2,
@@ -1498,21 +1516,45 @@ li {
     grid-row: 1/2;
     border-right: 1.5px solid black;
   }
+  .team_section3_div3_filtrering_sally {
+    grid-column: 2/7;
+  }
+
+  .carousel-item {
+    width: 24rem;
+  }
 
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
   /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
 
   /*--------------------- popup --------------------*/
 
-  .modal {
+  .modal .container {
     padding: 3em;
     max-width: 100ch;
+    overflow:hidden;
+    height: 50vh;
+    position:relative;
   }
 
-  .modal-div-indhold {
+  .modal-div-indhold, .modal-div-indhold-thank-you {
     display: flex;
+    align-items: center;
     gap: 2rem;
+    height: 100%;
   }
+
+  .modal-div-indhold a,  .modal-div-indhold a:visited, .modal-div-indhold a:hover {
+    text-decoration: none;
+  }
+
+  .modal-div-indhold-thank-you {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 
   .modal-div-indhold h2 {
     max-width: 44vh;
@@ -1629,7 +1671,7 @@ li {
 
   .nav-menu {
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     top: -100rem;
     gap: 0;
     flex-direction: column;

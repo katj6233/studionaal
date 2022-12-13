@@ -9,7 +9,8 @@
     <title>The Team</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="/script/mixitup.min.js" defer></script>
-    <script src="/script/mixitupinit.js" defer></script>
+    <script src="/script/mixitupinit.js" defer></script> 
+    <script src="/script/carousel.js" defer></script>
   </head>
 
   <!-- body -->
@@ -142,36 +143,12 @@
               <div class="team_section3_div4_filtrering_sally">
                 <h4>Previous work</h4>
                 <div class="team_section3_div5_filtrering_sally_pil">
-                  <h3><</h3>
-                  <h3>></h3>
+                  <button id="carousel_back_button"><</button>
+                  <button id="carousel_forward_button">></button>
                 </div>
               </div>
-              <div class="slider_wrapper">
-                <img
-                  class="carousel"
-                  src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
-                  alt="Billede af"
-                />
-                <img
-                  class="carousel"
-                  src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
-                  alt="Billede af"
-                />
-                <img
-                  class="carousel"
-                  src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
-                  alt="Billede af"
-                />
-                <img
-                  class="carousel"
-                  src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
-                  alt="Billede af"
-                />
-                <img
-                  class="carousel"
-                  src="/img/web_img/teams_content/sally/Sally_tat_img1.png"
-                  alt="Billede af"
-                />
+              <div class="slider_wrapper" id="carousel">
+                <!-- carousel.js indsaetter billedern -->
               </div>
               <p class="team_section3_filtrering_sally_p_links">
                 See more of her work on Instagram:
