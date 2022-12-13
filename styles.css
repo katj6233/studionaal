@@ -713,6 +713,137 @@ fieldset {
 
 /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
 /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
+
+/*--------------------- popup --------------------*/
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+
+.modal {
+  padding: 1em;
+  /* max-width: 50ch; */
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  margin: auto;
+}
+
+.close-button {
+  margin-block: 3rem;
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------------- kontaktformular --------------------*/
+
+:focus {
+  outline: none;
+}
+
+.col-3 {
+  float: left;
+  width: 100%;
+  margin-block: 1rem 3%;
+  position: sticky;
+}
+
+input {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: white;
+  border-top: none;
+}
+
+input[type="text"] {
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+}
+
+.effect-23 ~ .focus-bg:before,
+.effect-23 ~ .focus-bg:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: #ededed;
+  transition: 0.3s;
+  z-index: -1;
+}
+.effect-23:focus ~ .focus-bg:before,
+.has-content.effect-23 ~ .focus-bg:before {
+  transition: 0.3s;
+  width: 50%;
+  height: 100%;
+}
+.effect-23 ~ .focus-bg:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.effect-23:focus ~ .focus-bg:after,
+.has-content.effect-23 ~ .focus-bg:after {
+  transition: 0.3s;
+  width: 50%;
+  height: 100%;
+}
+.effect-23 ~ .label {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 10px;
+  color: transparent;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+.effect-23:focus ~ .label,
+.has-content.effect-23 ~ .label {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.effect-23 ~ .focus-bg:before,
+.effect-23 ~ .focus-bg:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+li {
+  /* padding: 5px 0; */
+  margin: 0;
+  overflow: hidden;
+}
+
+#nr4 {
+  padding-bottom: 4rem;
+}
+
+.button-send {
+  background-color: white;
+  border: none;
+}
+
 /*---------------------------------------------------------- 404 -------------------------------------------------------*/
 
 /*--------------------- grid section1 --------------------*/
@@ -1373,6 +1504,30 @@ fieldset {
 
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
   /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
+
+  /*--------------------- popup --------------------*/
+
+  .modal {
+    padding: 3em;
+    max-width: 100ch;
+  }
+
+  .modal-div-indhold {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .modal-div-indhold h2 {
+    max-width: 44vh;
+    margin-block: auto;
+  }
+
+  /*--------------------- kontaktformular --------------------*/
+
+  input[type="text"] {
+    width: 20rem;
+  }
+
   /*---------------------------------------------------------- 404 -------------------------------------------------------*/
 
   /*--------------------- grid section1 --------------------*/
