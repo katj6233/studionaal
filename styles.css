@@ -1,33 +1,27 @@
 :root {
-  /* backgroudcolor */
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #181818;
+  /* backgroundcolor */
+  --primary-bg-color--: #ffffff;
+  --secondary-bg-color--: #181818;
 
   /* gridcolor */
-  --primary-grid-color: rgba(153, 153, 153, 0.3);
-  --secondary-grid-color: #181818;
+  --primary-grid-color--: rgba(153, 153, 153, 0.3);
+  --secondary-grid-color--: #181818;
 
   /* header desk  */
-  --desk-bg-color-header: transparant;
-  --header-a-color: #0015d6;
+  --desk-bg-color-header--: transparant;
+  --header-a-color--: #0015d6;
 
   /* header mobile*/
-  --mobile-bg-color-header: transparant;
-  --mobile--a-color: #0015d6;
-  --burger-color-primary: #0338e1;
-  --burger-color-secondary: #181818;
+  --mobile-bg-color-header--: transparant;
+  --mobile--a-color--: #0015d6;
+  --burger-color-primary--: #0338e1;
+  --burger-color-secondary--: #181818;
 
   /* buttons*/
-  --button--bg-color: #ffffff;
-  --button-padding: 0.2rem;
-  --button-gap: ;
-  --button-height: ;
-
-  --button-radius: ;
-  --button-transform-animation-hover: scale(1.2);
-
-  --button-txt-color: #181818;
-  --button-txt-color-hover: #0338e1;
+  --button--bg-color--: #ffffff;
+  --button-padding--: 0.5rem;
+  --button-txt-color--: #181818;
+  --button-color-hover--: #0338e1;
 
   /* ------- headings ------ */
 
@@ -40,19 +34,18 @@
   --p--: "Graphik Light", sans-serif;
   --a--: "Graphik Medium", sans-serif;
   --nav--: "Graphik Light", sans-serif;
-  --CTA--: "Graphik Regular", sans-serif;
+  --cta--: "Graphik Regular", sans-serif;
   --figcaption--: "Graphik Regular Italic", sans-serif;
   --links--: "Graphik Regular Italic", sans-serif;
 
   /* hover */
-  --a--hover-primary: underline;
-  --a--hover-secondary: italic;
+  --a--hover-primary--: underline;
+  --a--hover-secondary--: italic;
   /* kan man lave border top og bottom her? */
-  --button-hover-primary: ;
-  --button-hover-color: #0338e1;
+  --button-hover-primary--: ;
+  --button-hover-color--: #0338e1;
 
   /* font-sizes */
-
   --h1-size--: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
   --h2-size--: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
   --h3-size--: clamp(1.438rem, 1.2256rem + 1.062vw, 2.5rem);
@@ -60,63 +53,58 @@
   --h5-size--: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
   --p-size--: clamp(1.125rem, 1.0124rem + 0.563vw, 1.688rem);
   --a-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  --nav-size--: clamp(1.3rem, 1.1894rem + 0.4539vw, 1.7rem);
+  --cta-size--: clamp(1.3rem, 1.1894rem + 0.4539vw, 1.7rem);
   --figcation-size--: clamp(1.125rem, 1.0124rem + 0.563vw, 1.688rem);
-  --button-size--: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  --links-size--: clamp(1rem, 0.9447rem + 0.227vw, 1.2rem);
 
-  --p--lineheight: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+  --p--lineheight--: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
 
   /* font-colors */
-  --h1--color-primary: #181818;
-  --h1--color-secondary: #ffffff;
+  --h1--color-primary--: #181818;
+  --h1--color-secondary--: #ffffff;
 
-  --h2--color-primary: #181818;
-  --h2--color-secondary: #ffffff;
+  --h2--color-primary--: #181818;
+  --h2--color-secondary--: #ffffff;
 
-  --h3--color-primary: #181818;
-  --h3--color-secondary: #ffffff;
+  --h3--color-primary--: #181818;
+  --h3--color-secondary--: #ffffff;
 
-  --h4--color-primary: #181818;
-  --h4--color-secondary: #ffffff;
+  --h4--color-primary--: #181818;
+  --h4--color-secondary--: #ffffff;
 
-  --h5--color-primary: #181818;
-  --h5--color-secondary: #ffffff;
+  --h5--color-primary--: #181818;
+  --h5--color-secondary--: #ffffff;
 
-  --p--color-primary: #181818;
-  --p--color-secondary: #ffffff;
+  --p--color-primary--: #181818;
+  --p--color-secondary--: #ffffff;
 
-  --figcaption--color-primary: #181818;
-  --figcaption--color-secondary: #ffffff;
+  --figcaption--color-primary--: #181818;
+  --figcaption--color-secondary--: #ffffff;
 
-  --a--color-primary: #181818;
-  --a--color-secondary: #ffffff;
+  --a--color-primary--: #181818;
+  --a--color-secondary--: #ffffff;
 
   /* margin headings */
-  --h1--margin-bottom: 1rem;
-  --p--margin-bottom: 1rem;
-  --p--margin-top: ;
+  --h1--margin-bottom--: 1rem;
+  --p--margin-bottom--: 1rem;
+  --p--margin-top--: ;
 
   /*---- GENERELLE REGLER mobil  390 --------*/
-  --margin-inline-mobil: ;
-  --padding-top-mobil: 2rem;
-
-  /*---- GENERELLE REGLER ipad mini 640 --------*/
-  --margin-inline-ipadmini: ;
-  --margin-bottom-ipadmini: ;
+  --margin-inline-mobil--: ;
+  --padding-top-mobil--: 2rem;
 
   /*---- GENERELLE REGLER ipad  768 --------*/
-  --margin-inline-ipad: ;
-  --margin-bottom-ipad: ;
+  --margin-inline-ipad--: ;
+  --margin-bottom-ipad--: ;
 
   /*---- GENERELLE REGLER desk 1024 --------*/
-  --margin-inline-desk--lille: 1;
-  --margin-bottom-desk--lille: ;
+  --margin-inline-desk--lille--: 1;
+  --margin-bottom-desk--lille--: ;
 
   /*---- GENERELLE REGLER desk 1280 --------*/
-  --margin-inline-desk: 1;
-  --margin-bottom-desk: ;
-
-  /*---- IMG REGLER--------*/
-  --img-shadow: ;
+  --margin-inline-desk--: 1;
+  --margin-bottom-desk--: ;
 }
 
 /*---------------------------------------------------------- FONT FACE -----------------------------------------------------*/
@@ -155,7 +143,7 @@
 }
 
 .generelt_margin {
-  padding-top: var(--padding-top-mobil);
+  padding-top: var(--padding-top-mobil--);
 }
 
 img {
@@ -168,89 +156,95 @@ img {
 h1 {
   font-family: var(--h1--);
   font-size: var(--h1-size--);
-  color: var(--h1--color-primary);
-  margin-bottom: var(--h1--margin-bottom);
+  color: var(--h1--color-primary--);
+  margin-bottom: var(--h1--margin-bottom--);
 }
 
 h2 {
   font-family: var(--h2--);
   font-size: var(--h2-size--);
-  color: var(--h2--color-primary);
+  color: var(--h2--color-primary--);
 }
 
 h3 {
   font-family: var(--h3--);
   font-size: var(--h3-size--);
-  color: var(--h3--color-primary);
+  color: var(--h3--color-primary--);
 }
 
 h4 {
   font-family: var(--h4--);
   font-size: var(--h4-size--);
-  color: var(--h4--color-primary);
+  color: var(--h4--color-primary--);
 }
 
 h5 {
   font-family: var(--h5--);
   font-size: var(--h5-size--);
-  color: var(--h5--color-primary);
+  color: var(--h5--color-primary--);
 }
 
-p,
-li {
+p {
   font-family: var(--p--);
   font-size: var(--p-size--);
   color: var(--p--color-primary);
-  margin-bottom: var(--p--margin-bottom);
+  margin-bottom: var(--p--margin-bottom--);
 }
 
 a {
   font-family: var(--a--);
   font-size: var(--a-size--);
-  color: var(--a--color-primary);
+  color: var(--a--color-primary--);
   text-decoration: none;
 }
 
 .figcaption {
   font-family: var(--figcaption--);
   font-size: var(--figcation-size--);
-  color: var(--figcaption--color-primary);
+  color: var(--figcaption--color-primary--);
+}
+
+li {
+  font-family: var(--links--);
+  font-size: var(--links-size--);
+  color: var(--p--color-primary);
 }
 
 .links_scroll {
   font-family: var(--links--);
   font-size: var(--p-size--);
   color: var(--p--color-primary);
-  margin-bottom: var(--p--margin-bottom);
+  margin-bottom: var(--p--margin-bottom--);
   text-decoration: underline;
 }
 
 .links_scroll:hover {
-  color: var(--header-a-color);
+  color: var(--header-a-color--);
 }
 
 /*----------------------------- Button --------------------------------*/
 
 .button,
 #button {
-  font-family: var(--CTA--);
-  background-color: var(--button--bg-color);
-  padding: var(--button-padding);
-  margin-left: 0.05rem;
+  font-family: var(--cta--);
+  font-size: var(--cta-size--);
+  color: var(--button-txt-color--);
+  background-color: var(--button--bg-color--);
+  padding-block: var(--button-padding--);
 }
 
 .button_nav {
-  font-family: var(--CTA--);
-  background-color: var(--button--bg-color);
-  padding: var(--button-padding);
+  font-family: var(--cta--);
+  color: var(--button-txt-color--);
+  background-color: var(--button--bg-color--);
+  padding-block: var(--button-padding--);
 }
 
 .button:hover,
 #button:hover,
 .button_nav:hover {
-  color: var(--button-txt-color-hover);
-  animation: var(--button-transform-animation-hover);
-  border-block: solid 1px var(--button-txt-color-hover);
+  color: var(--button-color-hover--);
+  border-block: solid 1px var(--button-color-hover--);
 }
 
 /*---------------------------------------------------------- MENU ------------------------------------------------------*/
@@ -271,7 +265,7 @@ li {
 .container-logo {
   height: 50px;
   width: 120px;
-  border-right: 1px solid var(--primary-grid-color);
+  border-right: 1px solid var(--primary-grid-color--);
 }
 
 .nav-logo {
@@ -293,7 +287,7 @@ li {
 .container-hamburger {
   height: 50px;
   width: 120px;
-  border-left: 1px solid var(--primary-grid-color);
+  border-left: 1px solid var(--primary-grid-color--);
   display: flex;
   justify-content: space-evenly;
 }
@@ -321,7 +315,7 @@ li {
 /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
 
 #footer_allaround {
-  border-top: 1px solid var(--primary-grid-color);
+  border-top: 1px solid var(--primary-grid-color--);
 }
 
 .footer_div_links ul {
@@ -334,8 +328,8 @@ li {
 }
 
 .footer_section1_indhold {
-  border-left: 10px solid var(--burger-color-primary);
-  border-bottom: 10px solid var(--burger-color-primary);
+  border-left: 10px solid var(--burger-color-primary--);
+  border-bottom: 10px solid var(--burger-color-primary--);
 }
 
 .footer_section1_indhold .footer_a_links_sider {
@@ -363,13 +357,13 @@ li {
 
 .background_grid_mobile .grid-item,
 .background_grid_tablet_desktop .grid-item {
-  border-right: 1px solid var(--primary-grid-color);
+  border-right: 1px solid var(--primary-grid-color--);
 }
 
 .background_grid_mobile .grid-item-1,
 .background_grid_tablet_desktop .grid-item-1 {
-  border-left: 1px solid var(--primary-grid-color);
-  border-right: 1px solid var(--primary-grid-color);
+  border-left: 1px solid var(--primary-grid-color--);
+  border-right: 1px solid var(--primary-grid-color--);
 }
 
 /*---------------------------------------------------------- FORSIDE ---------------------------------------------------*/
@@ -406,7 +400,7 @@ li {
   grid-column: 1/4;
   font-family: var(--h2--);
   font-size: var(--h2-size--);
-  color: var(--h2--color-primary);
+  color: var(--h2--color-primary--);
 }
 
 .forside_section2_tekst_cta {
@@ -656,7 +650,7 @@ fieldset {
 .team_section3_filtrering_sally {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--a--color-primary);
+  border-top: 1px solid var(--a--color-primary--);
   padding-top: 2rem;
   margin-top: 2rem;
 }
@@ -684,6 +678,12 @@ fieldset {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* .slider_wrapper {
+  grid-column: 1/4;
+  display: flex;
+  
+} */
 
 .carousel {
   grid-column: 2/4;
@@ -940,9 +940,9 @@ li {
 
   .footer_section2_tom_boks {
     display: block;
-    border-right: 10px solid var(--burger-color-primary);
-    border-bottom: 10px solid var(--burger-color-primary);
-    border-left: 1px solid var(--primary-grid-color);
+    border-right: 10px solid var(--burger-color-primary--);
+    border-bottom: 10px solid var(--burger-color-primary--);
+    border-left: 1px solid var(--primary-grid-color--);
   }
 
   /*---------------------------------------------------------- GRID ------------------------------------------------------*/
@@ -1483,9 +1483,6 @@ li {
     /* display: grid; */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* border-top: 1px solid var(--a--color-primary);
-    padding-top: 2rem;
-    margin-top: 2rem; */
   }
 
   .team_section3_filtrering_sally img {
@@ -1647,7 +1644,7 @@ li {
   }
 
   .nav-link:hover {
-    color: var(--mobile--a-color);
+    color: var(--mobile--a-color--);
     text-decoration: underline;
   }
 
