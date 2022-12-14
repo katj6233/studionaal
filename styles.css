@@ -301,10 +301,10 @@ li {
 .nav-menu.active {
   top: 50px;
 }
-
+/* 
 .nav-item {
   margin-block: 4rem;
-}
+} */
 
 .container-hamburger {
   height: 50px;
@@ -473,6 +473,11 @@ li {
 .forside_section3_image {
   grid-column: 1/3;
   margin-top: 0.5rem;
+}
+
+.forside_section3_image a,
+.forside_section2_tekst_cta a {
+  margin-left: 0.02rem;
 }
 
 .forside_section3_tekst {
@@ -1025,6 +1030,12 @@ li {
     margin-inline: 1rem;
   }
   /*---------------------------------------------------------- MENU ------------------------------------------------------*/
+
+  .nav-menu.active {
+    top: 50px;
+    height: 34rem;
+  }
+
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
 
   .footer_article_around {
@@ -1794,12 +1805,15 @@ li {
     position: fixed;
     z-index: 1;
     top: -100rem;
-    gap: 0;
+    gap: 5rem;
     flex-direction: column;
     background-color: white;
     width: 100%;
     text-align: center;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-link {
