@@ -24,8 +24,8 @@ for (let i = 1; i <= 10; i++) {
   imageSally.classList.add("carousel-item");
   imageSally.src =
     "/img/web_img/teams_content/sally/Sally_tat_img" + i + ".png";
-  imageSally.alt = "Billede af";
-  imageSally.id = "carousel-item" + i;
+  imageSally.alt = "Billede af Sally's tatoveringer" + i;
+  imageSally.id = "carousel-item-sally" + i;
 
   carouselSally.appendChild(imageSally);
 }
@@ -37,8 +37,8 @@ for (let i = 1; i <= 10; i++) {
   imageEmily.classList.add("carousel-item");
   imageEmily.src =
     "/img/web_img/teams_content/emily/Emily_tat_img" + i + ".png";
-  imageEmily.alt = "Billede af";
-  imageEmily.id = "carousel-item" + i;
+  imageEmily.alt = "Billede af Emily's tatoveringer";
+  imageEmily.id = "carousel-item-emily" + i;
 
   carouselEmily.appendChild(imageEmily);
 }
@@ -50,8 +50,8 @@ for (let i = 1; i <= 10; i++) {
   imageTania.classList.add("carousel-item");
   imageTania.src =
     "/img/web_img/teams_content/tania/Tania_tat_img" + i + ".png";
-  imageTania.alt = "Billede af";
-  imageTania.id = "carousel-item" + i;
+  imageTania.alt = "Billede af Tania's tatoveringer";
+  imageTania.id = "carousel-item-tania" + i;
 
   carouselTania.appendChild(imageTania);
 }
@@ -63,71 +63,80 @@ let lastImageIdTania = 1;
 // event tryk frem
 forwardButtonSally.addEventListener("click", () => {
   // stop hvis sidste billede
-  if (lastImageId >= 10) return;
+  if (lastImageIdSally >= 10) return;
 
   // opdater aktive billede
-  const nextImageId = lastImageId + 1;
+  const nextImageId = lastImageIdSally + 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-sally" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
-  lastImageId = nextImageId;
+  carouselSally.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  lastImageIdSally = nextImageId;
 });
 
 // event tryk tilbage
 backButtonSally.addEventListener("click", () => {
   // stop hvis foerste  billede
-  if (lastImageId <= 1) return;
+  if (lastImageIdSally <= 1) return;
 
   // opdater aktive billede
-  const nextImageId = lastImageId - 1;
+  const nextImageId = lastImageIdSally - 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-sally" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  carouselSally.scrollBy({ left: scrollPosition, behavior: "smooth" });
 
-  lastImageId = nextImageId;
+  lastImageIdSally = nextImageId;
 });
 
 // event tryk frem
 forwardButtonEmily.addEventListener("click", () => {
   // stop hvis sidste billede
-  if (lastImageId >= 10) return;
+  if (lastImageIdEmily >= 10) return;
+  console.log("Hej");
 
   // opdater aktive billede
-  const nextImageId = lastImageId + 1;
+  const nextImageId = lastImageIdEmily + 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-emily" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
-  lastImageId = nextImageId;
+  carouselEmily.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  lastImageIdEmily = nextImageId;
 });
 
 // event tryk tilbage
 backButtonEmily.addEventListener("click", () => {
   // stop hvis foerste  billede
-  if (lastImageId <= 1) return;
+  if (lastImageIdEmily <= 1) return;
 
   // opdater aktive billede
-  const nextImageId = lastImageId - 1;
+  const nextImageId = lastImageIdEmily - 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-emily" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  carouselEmily.scrollBy({ left: scrollPosition, behavior: "smooth" });
 
-  lastImageId = nextImageId;
+  lastImageIdEmily = nextImageId;
 });
 
 // event tryk frem
@@ -139,28 +148,32 @@ forwardButtonTania.addEventListener("click", () => {
   const nextImageId = lastImageIdTania + 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-tania" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  carouselTania.scrollBy({ left: scrollPosition, behavior: "smooth" });
   lastImageIdTania = nextImageId;
 });
 
 // event tryk tilbage
 backButtonTania.addEventListener("click", () => {
   // stop hvis foerste  billede
-  if (lastImageId <= 1) return;
+  if (lastImageIdTania <= 1) return;
 
   // opdater aktive billede
-  const nextImageId = lastImageId - 1;
+  const nextImageId = lastImageIdTania - 1;
 
   // scroll til naeste billede
-  const nextImage = document.querySelector("#carousel-item" + nextImageId);
+  const nextImage = document.querySelector(
+    "#carousel-item-tania" + nextImageId
+  );
 
   const scrollPosition = nextImage.getBoundingClientRect().left;
 
-  carousel.scrollBy({ left: scrollPosition, behavior: "smooth" });
+  carouselTania.scrollBy({ left: scrollPosition, behavior: "smooth" });
 
-  lastImageId = nextImageId;
+  lastImageIdTania = nextImageId;
 });
