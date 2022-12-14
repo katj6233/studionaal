@@ -785,6 +785,20 @@ fieldset {
   cursor: pointer;
 }
 
+.modal-div-indhold-thank-you {
+  display: none;
+}
+
+.button-send {
+  display: none;
+}
+
+.close-button-send {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /*--------------------- kontaktformular --------------------*/
 
 :focus {
@@ -887,6 +901,7 @@ li {
 
 #nr4 {
   padding-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .button-send {
@@ -921,8 +936,7 @@ li {
 #git_guide_cookie_trade_notfound_section2_404 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 8rem;
 }
 
 .git_guide_cookie_trade_notfound_section1 h1,
@@ -948,7 +962,7 @@ li {
 #git_guide_cookie_trade_notfound_section3 ul,
 #git_guide_cookie_trade_notfound_section4 ul,
 #git_guide_cookie_trade_notfound_section5 ol,
-#git_guide_cookie_trade_notfound_section2_404 a {
+#git_guide_cookie_trade_notfound_section2_404_cta {
   grid-column: 2/4;
   padding-top: 1rem;
 }
@@ -1270,6 +1284,13 @@ li {
 
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
   /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
+
+  /*--------------------- popup --------------------*/
+
+  .modal-div-indhold-thank-you {
+    display: none;
+  }
+
   /*---------------------------------------------------------- 404 -------------------------------------------------------*/
 
   /*--------------------- grid section1 --------------------*/
@@ -1333,9 +1354,10 @@ li {
     grid-column: 3/6;
   }
 
-  #git_guide_cookie_trade_notfound_section2 a,
-  #git_guide_cookie_trade_notfound_section2_404 a {
+  .git_guide_cookie_trade_notfound_section2_reachout_cta,
+  .git_guide_cookie_trade_notfound_section2_404_cta {
     grid-column: 3/4;
+    margin-top: 2rem;
   }
 
   /*--------------------- grid section6 --------------------*/
@@ -1581,13 +1603,21 @@ li {
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
   /*---------------------------------------------------------- GET IN TOUCH ----------------------------------------------*/
 
+  .close-button-send {
+    display: none;
+  }
+
+  .button-send {
+    display: block;
+  }
+
   /*--------------------- popup --------------------*/
 
   .modal .container {
     padding: 3em;
-    max-width: 100ch;
+    max-width: 120ch;
     overflow: hidden;
-    height: 50vh;
+    height: 75vh;
     position: relative;
   }
 
