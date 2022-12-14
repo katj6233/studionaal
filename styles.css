@@ -591,7 +591,7 @@ li {
 .events_section3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .events_section3_h2 {
@@ -613,9 +613,21 @@ li {
   grid-column: 1/3;
 }
 
-.events_section3_div1 p,
-.events_section3_div2 p,
-.events_section3_div3 p,
+.events_section3_div2 p {
+  grid-column: 2/4;
+  margin-top: 0.5rem;
+}
+
+.events_section3_div1 p {
+  grid-column: 1/4;
+  margin-top: 0.5rem;
+}
+
+.events_section3_div3 p {
+  grid-column: 1/3;
+  margin-top: 0.5rem;
+}
+
 .events_section3_div4 p {
   grid-column: 2/4;
   margin-top: 0.5rem;
@@ -645,10 +657,6 @@ li {
 
 .events_section3_div4 img {
   grid-column: 2/4;
-}
-
-.events_section3_div4 p {
-  grid-column: 1/4;
 }
 
 /*---------------------------------------------------------- TEAM ------------------------------------------------------*/
@@ -703,6 +711,7 @@ li {
 
 fieldset {
   border: none;
+  margin-left: 0.02rem;
 }
 
 .team_section3_filtrering {
@@ -968,9 +977,8 @@ li {
 #git_guide_cookie_trade_notfound_section5 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 #git_guide_cookie_trade_notfound_section2_404 {
@@ -1011,6 +1019,7 @@ li {
 .git_guide_cookie_trade_notfound_section6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 6rem;
 }
 
 .git_guide_cookie_trade_notfound_section6 h3 {
@@ -1031,11 +1040,18 @@ li {
   }
   /*---------------------------------------------------------- MENU ------------------------------------------------------*/
 
-  .nav-menu.active {
-    top: 50px;
-    height: 34rem;
+  .nav-menu {
+    position: fixed;
+    z-index: 1;
+    top: -100rem;
+    gap: 5rem;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    display: flex;
   }
-
   /*---------------------------------------------------------- FOOTER ----------------------------------------------------*/
 
   .footer_article_around {
@@ -1645,6 +1661,10 @@ li {
 
   .all {
     margin-right: 0.1rem;
+  }
+
+  .team_section3 {
+    padding-bottom: 6rem;
   }
 
   /*---------------------------------------------------------- GUIDE -----------------------------------------------------*/
