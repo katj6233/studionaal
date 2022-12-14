@@ -9,7 +9,7 @@
     <title>The Team</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="/script/mixitup.min.js" defer></script>
-    <script src="/script/mixitupinit.js" defer></script> 
+    <script src="/script/mixitupinit.js" defer></script>
     <script src="/script/carousel.js" defer></script>
   </head>
 
@@ -93,29 +93,41 @@
           <fieldset>
             <!-- <h5>sortering</h5>
             <button type="button" data-sort="random">Random</button> -->
-            <button class="button" type="button" data-filter=".all">
-              Show all
+            <button class="button filtrering" type="button" data-filter=".all">
+              [Show all]
             </button>
-            <button class="button" type="button" data-filter=".sally">
-              Syro Bisses work
+            <button
+              class="button filtrering"
+              type="button"
+              data-filter=".sally"
+            >
+              [Show Syro_Bisses work]
             </button>
-            <button class="button" type="button" data-filter=".emily">
-              Emily' work
+            <button
+              class="button filtrering"
+              type="button"
+              data-filter=".emily"
+            >
+              [Show Grill_Tattoos work]
             </button>
-            <button class="button" type="button" data-filter=".tania">
-              Tania'
+            <button
+              class="button filtrering"
+              type="button"
+              data-filter=".tania"
+            >
+              [Show It's_Spicytattoos work]
             </button>
           </fieldset>
         </form>
 
         <!----- sally ----->
         <article class="team_article_sally mix all sally" data-name="sally">
-          <section class="team_section3_filtrering_sally">
+          <section class="team_section3_filtrering">
             <img
               src="/img/web_img/teams_content/sally/Sally_img_face.png"
               alt="Billede af"
             />
-            <div class="team_section3_div1_filtrering_sally">
+            <div class="team_section3_div1_filtrering">
               <h3>Syro_Bisse // Sally</h3>
               <p>
                 Syro Bisse's arrogant style is the definition of youth. Her
@@ -124,13 +136,13 @@
               </p>
             </div>
 
-            <div class="team_section3_div2_filtrering_sally">
-              <div class="team_section3_div2_div1_filtrering_sally">
+            <div class="team_section3_div2_filtrering">
+              <div class="team_section3_div2_div1_filtrering">
                 <li>
                   “I had an awesome time with Sally, she is so nice and very
                   talented” - Emma (customer)
                 </li>
-                <li>
+                <li class="team_section3_div2_div1_filtrering_li2">
                   “I know it will be a good experience when I have an
                   appointment with Grill, she just knows what she's doing” -
                   Johann (customer)
@@ -139,18 +151,18 @@
               </div>
             </div>
 
-            <div class="team_section3_div3_filtrering_sally">
-              <div class="team_section3_div4_filtrering_sally">
+            <div class="team_section3_div3_filtrering">
+              <div class="team_section3_div4_filtrering">
                 <h4>Previous work</h4>
-                <div class="team_section3_div5_filtrering_sally_pil">
-                  <button id="carousel_back_button"><</button>
-                  <button id="carousel_forward_button">></button>
+                <div class="team_section3_div5_filtrering_pil">
+                  <button id="carousel_back_button_sally"><</button>
+                  <button id="carousel_forward_button_sally">></button>
                 </div>
               </div>
-              <div class="slider_wrapper" id="carousel">
+              <div class="slider_wrapper" id="carousel-sally">
                 <!-- carousel.js indsaetter billedern -->
               </div>
-              <p class="team_section3_filtrering_sally_p_links">
+              <p class="team_section3_filtrering_p_links">
                 See more of her work on Instagram:
                 <a
                   class="links_scroll"
@@ -171,15 +183,125 @@
         </article>
 
         <!----- emily ----->
-
         <article class="team_article_emily mix all emily" data-name="emily">
-          <h1>Hej Emily</h1>
+          <section class="team_section3_filtrering">
+            <img
+              src="/img/web_img/teams_content/emily/Emily_img_face.png"
+              alt="Billede af"
+            />
+            <div class="team_section3_div1_filtrering">
+              <h3>Grill_Tattoo // Emily</h3>
+              <p>
+                Grill Tattoo style is defined through fine thin lines and
+                beautiful silhouettes. Her style shows her calm personality and
+                warm mind.
+              </p>
+            </div>
+
+            <div class="team_section3_div2_filtrering">
+              <div class="team_section3_div2_div1_filtrering">
+                <li>
+                  “I know that i can always trust Emily, she is so precise” -
+                  Nina (customer)
+                </li>
+                <li class="team_section3_div2_div1_filtrering_li2">
+                  “I know it will be a good experience when I have an
+                  appointment with Grill, she just knows what she's doing” -
+                  Johann (customer)
+                </li>
+                <a class="button" href="#">[BOOK]</a>
+              </div>
+            </div>
+
+            <div class="team_section3_div3_filtrering">
+              <div class="team_section3_div4_filtrering">
+                <h4>Previous work</h4>
+                <div class="team_section3_div5_filtrering_pil">
+                  <button id="carousel_back_button_emily"><</button>
+                  <button id="carousel_forward_button_emily">></button>
+                </div>
+              </div>
+              <div class="slider_wrapper" id="carousel-emily">
+                <!-- carousel.js indsaetter billedern -->
+              </div>
+              <p class="team_section3_filtrering_p_links">
+                See more of her work on Instagram:
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/studio_n.a.a.l/"
+                  target="blank"
+                  >@studio_naal</a
+                >
+                and
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/grill__tattoo/"
+                  target="blank"
+                  >@grill_tattoo</a
+                >
+              </p>
+            </div>
+          </section>
         </article>
 
         <!----- tania ----->
-
         <article class="team_article_tania mix all tania" data-name="tania">
-          <h1>Hej Tania</h1>
+          <section class="team_section3_filtrering">
+            <img
+              src="/img/web_img/teams_content/tania/Tania_img_face.png"
+              alt="Billede af"
+            />
+            <div class="team_section3_div1_filtrering">
+              <h3>It’s_Spicytattoos // Tania</h3>
+              <p>
+                Spicy is particularly good at fine line and dot work. Her style
+                is very inspired by y2k and tribal illustrations.
+              </p>
+            </div>
+
+            <div class="team_section3_div2_filtrering">
+              <div class="team_section3_div2_div1_filtrering">
+                <li>
+                  “Spicy made freehand on me and it is something like the most
+                  beautiful thing I have had in a long time” - Magnus (customer)
+                </li>
+                <li class="team_section3_div2_div1_filtrering_li2">
+                  “I always have fun when I have an appointment with Spicy.
+                  There is always room for laughter.” - Marie (customer)
+                </li>
+                <a class="button" href="#">[BOOK]</a>
+              </div>
+            </div>
+
+            <div class="team_section3_div3_filtrering">
+              <div class="team_section3_div4_filtrering">
+                <h4>Previous work</h4>
+                <div class="team_section3_div5_filtrering_pil">
+                  <button id="carousel_back_button_tania"><</button>
+                  <button id="carousel_forward_button_tania">></button>
+                </div>
+              </div>
+              <div class="slider_wrapper" id="carousel-tania">
+                <!-- carousel.js indsaetter billedern -->
+              </div>
+              <p class="team_section3_filtrering_p_links">
+                See more of her work on Instagram:
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/studio_n.a.a.l/"
+                  target="blank"
+                  >@studio_naal</a
+                >
+                and
+                <a
+                  class="links_scroll"
+                  href="https://www.instagram.com/its_spicytattoos/"
+                  target="blank"
+                  >@it’s_spicytattoos</a
+                >
+              </p>
+            </div>
+          </section>
         </article>
       </section>
     </main>
